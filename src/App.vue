@@ -1,15 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+ 
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <!-- Home Component -->
+  <HomePage />
+
+  <!-- Dashboard Component -->
+  <UserDashboard />
+
+  <!-- Profile Component -->
+  <ProfileView />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import HomePage from './components/Home.vue';
+import UserDashboard from './components/Dashboard.vue';
+import ProfileView from './components/Profile.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    HomePage,
+    UserDashboard,
+    ProfileView
   }
 }
 </script>
